@@ -21,7 +21,7 @@ const schema = {
   "@context": "http://www.schema.org",
   "@type": "Organization",
   name: "Quickgold",
-  url: "https://quickgold.es/casa-cambio-vigo/",
+  url: "https://quickgold.es/casa-cambio-murcia/",
   sameAs: [
     "https://instagram.com/quickgold.es",
     "https://twitter.com/quickgoldqg",
@@ -30,11 +30,11 @@ const schema = {
   logo: "https://quickgold.es/wp-content/uploads/img/logo.jpg",
   image: "https://quickgold.es/wp-content/uploads/img/logo.jpg",
   description:
-    "Cambiar divisa en Vigo es fácil y rápido. Tenemos más de 30 monedas disponibles para que cambies moneda extranjera en solo unos minutos.",
+    "¿Necesitas cambiar divisa en Murcia? Visita nuestra casa de cambio y cambia moneda extranjera al momento y sin comisiones. Solo en Quickgold.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Vigo",
-    addressRegion: "Vigo",
+    addressLocality: "Murcia",
+    addressRegion: "Murcia",
     addressCountry: "España",
   },
   contactPoint: {
@@ -56,8 +56,8 @@ const breadCrumb = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Casa cambio vigo",
-      item: "https://quickgold.es/casa-cambio-vigo/",
+      name: "Casa cambio murcia",
+      item: "https://quickgold.es/casa-cambio-murcia/",
     },
   ],
 };
@@ -79,10 +79,10 @@ export default function Home({ markers, menu_list }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumb) }}
         ></script>
-        <title>Casas de Cambio en Vigo | Cambio de Divisas Vigo</title>
+        <title>Casas de Cambio en Murcia | Cambio de Divisas Murcia</title>
         <meta
           name="description"
-          content="Cambiar divisa en Vigo es fácil y rápido. Tenemos más de 30 monedas disponibles para que cambies moneda extranjera en solo unos minutos."
+          content="¿Necesitas cambiar divisa en Murcia? Visita nuestra casa de cambio y cambia moneda extranjera al momento y sin comisiones. Solo en Quickgold."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
@@ -109,7 +109,7 @@ export default function Home({ markers, menu_list }) {
     </>
   );
 }
-const idTienda = "vigo";
+const idTienda = "murcia";
 //const idWp = "13848";
 export async function getStaticProps() {
   /*const response = await fetch(

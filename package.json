@@ -1,8 +1,8 @@
 {
-  "name": "casa-cambio-vigo",
+  "name": "casa-cambio-murcia",
   "version": "0.1.0",
   "private": true,
-  "home": "quickgold.es/casa-cambio-vigo",
+  "home": "quickgold.es/casa-cambio-murcia",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",

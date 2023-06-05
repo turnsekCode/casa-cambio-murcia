@@ -78,7 +78,7 @@ export default function Mapa({ markers }) {
       <div className={styles.contenedorbloqueIzq}>
         <div className={styles.bloqueIzq}>
           <h2>
-            Casas de cambio en <span className={styles.linea}>Vigo</span>
+            Casas de cambio en <span className={styles.linea}>Murcia</span>
           </h2>
           <p>
             Tiendas Quickgold: <span>{numeroDeTiendas.id}</span>

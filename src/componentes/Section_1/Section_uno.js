@@ -11,12 +11,12 @@ const Section_uno = () => {
     <section className={styles.contenedorSectionUno}>
       <div className={styles.bloqueIzq}>
         <h1>
-          Casas de cambio en <span className={styles.linea}>Vigo</span>
+          Casas de cambio en <span className={styles.linea}>Murcia</span>
         </h1>
         <p>
-          Nuestra oficina de cambio de divisas en Vigo se encuentra en Rúa de
-          Urzaiz número 80. Visítanos para cambiar moneda extranjera al mejor
-          tipo de cambio de toda la provincia de Pontevedra.
+          Visita nuestro money exchange en Murcia y cambia dólares por euros o
+          cualquier otra moneda al instante. Consigue el mejor tipo de cambio en
+          nuestra oficina de cambio en Murcia.
         </p>
         <div className={styles.botones}>
           <Link
@@ -39,16 +39,16 @@ const Section_uno = () => {
       <div className={styles.bloqueDer}>
         {width <= 610 ? (
           <img
-            src="/vigo_mobil.webp"
-            alt="Casas de cambio vigo"
+            src="/divisa-mobil.webp"
+            alt="Casas de cambio murcia"
             className={styles.madridMobil}
             width={290}
             height={220}
           />
         ) : (
           <img
-            src="/vigo.webp"
-            alt="Casas de cambio vigo"
+            src="/divisa.webp"
+            alt="Casas de cambio murcia"
             className={styles.vector}
             width={480}
             height={364}

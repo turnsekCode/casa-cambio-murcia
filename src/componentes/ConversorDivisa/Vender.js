@@ -6,7 +6,7 @@ import ImportExportIcon from "@mui/icons-material/ImportExport";
 //import { useFetchData } from "../../utilities/DataTiendas";
 
 const Comprar = () => {
-  const nombreCiudad = "vigo";
+  const nombreCiudad = "murcia";
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(null);
   useEffect(() => {

@@ -17,4 +17,4 @@ jobs:
           server: 51.91.251.183
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /public_html/quickgold.es/casa-cambio-vigo/
+          server-dir: /public_html/quickgold.es/casa-cambio-murcia/
