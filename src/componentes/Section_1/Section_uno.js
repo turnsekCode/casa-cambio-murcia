@@ -40,7 +40,7 @@ const Section_uno = () => {
         {width <= 610 ? (
           <img
             src="/divisa-mobil.webp"
-            alt="Casas de cambio murcia"
+            alt="Casas de cambio Murcia"
             className={styles.madridMobil}
             width={290}
             height={220}
@@ -48,7 +48,7 @@ const Section_uno = () => {
         ) : (
           <img
             src="/divisa.webp"
-            alt="Casas de cambio murcia"
+            alt="Casas de cambio Murcia"
             className={styles.vector}
             width={480}
             height={364}

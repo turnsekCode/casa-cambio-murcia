@@ -1397,13 +1397,13 @@ const Section_uno = ()=>{
                 className: (section_uno_module_default()).bloqueDer,
                 children: width <= 610 ? /*#__PURE__*/ jsx_runtime_.jsx("img", {
                     src: "/divisa-mobil.webp",
-                    alt: "Casas de cambio murcia",
+                    alt: "Casas de cambio Murcia",
                     className: (section_uno_module_default()).madridMobil,
                     width: 290,
                     height: 220
                 }) : /*#__PURE__*/ jsx_runtime_.jsx("img", {
                     src: "/divisa.webp",
-                    alt: "Casas de cambio murcia",
+                    alt: "Casas de cambio Murcia",
                     className: (section_uno_module_default()).vector,
                     width: 480,
                     height: 364
