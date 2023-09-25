@@ -2181,35 +2181,25 @@ const Vender_Comprar = ()=>{
                                         placeholder: "0.00",
                                         inputMode: "numeric",
                                         readOnly: true,
-                                        //id="input-izquierdo"
-                                        //ref={refInput1}
-                                        //onChange={calcularCambio}
-                                        value: valorFinal2.toFixed(2)
+                                        value: valorFinal.toFixed(2)
                                     }) : /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "text",
                                         pattern: "[0-9]*",
                                         placeholder: "0.00",
                                         inputMode: "numeric",
                                         className: (estilosConversor_module_default()).inputInferior,
-                                        //readOnly
-                                        //id="input-izquierdo"
-                                        //ref={refInput1}
-                                        //onChange={calcularCambio}
-                                        //value={valorFinal.toFixed(2)}
                                         onChange: (event)=>setValorInput(event.target.value)
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                        children: DataAcronimo
+                                        children: "EUR"
                                     })
                                 ]
                             }),
                             selectDivisa ? /*#__PURE__*/ jsx_runtime_.jsx("p", {}) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                 children: [
-                                    "1",
-                                    DataAcronimo,
-                                    " = ",
-                                    precioDividido.toFixed(4),
-                                    "EUR"
+                                    "1EUR = ",
+                                    precioDividido2.toFixed(4),
+                                    DataAcronimo
                                 ]
                             })
                         ]
@@ -2227,11 +2217,9 @@ const Vender_Comprar = ()=>{
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (estilosConversor_module_default()).contenedorInputInferior,
                 children: [
-                    selectDivisa ? /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                        children: DataAcronimo
-                    }) : /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    selectDivisa ? /*#__PURE__*/ jsx_runtime_.jsx((PowerInput_default()), {}) : /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (estilosConversor_module_default()).monedaInferior,
-                        children: "EUR"
+                        children: DataAcronimo
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (estilosConversor_module_default()).bloqueDerInput,
@@ -2245,35 +2233,30 @@ const Vender_Comprar = ()=>{
                                         placeholder: "Cantidad",
                                         inputMode: "numeric",
                                         className: (estilosConversor_module_default()).inputInferior,
-                                        //id="input-derecho"
-                                        //ref={refInput2}
-                                        //onChange={calcularCambio}
-                                        //value={valorFinal.toFixed(2)}
                                         onChange: (event)=>setValorInput(event.target.value)
                                     }) : /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "text",
                                         pattern: "[0-9]*",
                                         placeholder: "Cantidad",
                                         inputMode: "numeric",
-                                        //id="input-derecho"
-                                        //ref={refInput2}
-                                        //onChange={calcularCambio}
-                                        value: valorFinal.toFixed(2),
+                                        value: valorFinal2.toFixed(2),
                                         readOnly: true,
                                         style: {
                                             border: "none"
                                         }
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                        children: "EUR"
+                                        children: DataAcronimo
                                     })
                                 ]
                             }),
                             selectDivisa ? /*#__PURE__*/ jsx_runtime_.jsx("p", {}) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                 children: [
-                                    "1EUR = ",
-                                    precioDividido2.toFixed(4),
-                                    DataAcronimo
+                                    "1",
+                                    DataAcronimo,
+                                    " = ",
+                                    precioDividido.toFixed(4),
+                                    "EUR"
                                 ]
                             })
                         ]

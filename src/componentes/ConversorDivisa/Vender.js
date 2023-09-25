@@ -286,11 +286,7 @@ const Comprar = () => {
                   placeholder="0.00"
                   inputMode="numeric"
                   readOnly
-                  //id="input-izquierdo"
-                  //ref={refInput1}
-                  //onChange={calcularCambio}
-                  value={valorFinal2.toFixed(2)}
-                  //onChange={(event) => setValorInput(event.target.value)}
+                  value={valorFinal.toFixed(2)}
                 />
               ) : (
                 <input
@@ -299,22 +295,18 @@ const Comprar = () => {
                   placeholder="0.00"
                   inputMode="numeric"
                   className={styles.inputInferior}
-                  //readOnly
-                  //id="input-izquierdo"
-                  //ref={refInput1}
-                  //onChange={calcularCambio}
-                  //value={valorFinal.toFixed(2)}
                   onChange={(event) => setValorInput(event.target.value)}
                 />
               )}
-              <span>{DataAcronimo}</span>
+              <span>EUR</span>
             </div>
           )}
           {selectDivisa ? (
             <p></p>
           ) : (
             <p>
-              1{DataAcronimo} = {precioDividido.toFixed(4)}EUR
+              1EUR = {precioDividido2.toFixed(4)}
+              {DataAcronimo}
             </p>
           )}
         </div>
@@ -328,10 +320,11 @@ const Comprar = () => {
       </div>
       <div className={styles.contenedorInputInferior}>
         {selectDivisa ? (
-          <span>{DataAcronimo}</span>
+          <PowerInputIcon />
         ) : (
-          <div className={styles.monedaInferior}>EUR</div>
+          <div className={styles.monedaInferior}>{DataAcronimo}</div>
         )}
+
         <div className={styles.bloqueDerInput}>
           {selectDivisa ? (
             <PowerInputIcon />
@@ -344,10 +337,6 @@ const Comprar = () => {
                   placeholder="Cantidad"
                   inputMode="numeric"
                   className={styles.inputInferior}
-                  //id="input-derecho"
-                  //ref={refInput2}
-                  //onChange={calcularCambio}
-                  //value={valorFinal.toFixed(2)}
                   onChange={(event) => setValorInput(event.target.value)}
                 />
               ) : (
@@ -356,24 +345,20 @@ const Comprar = () => {
                   pattern="[0-9]*"
                   placeholder="Cantidad"
                   inputMode="numeric"
-                  //id="input-derecho"
-                  //ref={refInput2}
-                  //onChange={calcularCambio}
-                  value={valorFinal.toFixed(2)}
+                  value={valorFinal2.toFixed(2)}
                   readOnly
                   style={{ border: "none" }}
-                  //onChange={(event) => setValorInput(event.target.value)}
                 />
               )}
-              <span>EUR</span>
+              <span>{DataAcronimo}</span>
             </div>
           )}
           {selectDivisa ? (
             <p></p>
           ) : (
             <p>
-              1EUR = {precioDividido2.toFixed(4)}
-              {DataAcronimo}
+              1{DataAcronimo} = {precioDividido.toFixed(4)}
+              EUR
             </p>
           )}
         </div>
