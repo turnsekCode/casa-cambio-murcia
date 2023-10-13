@@ -24,6 +24,7 @@
     "react-gtm-module": "^2.0.11",
     "react-intersection-observer": "^9.4.3",
     "react-map-gl": "^7.0.19",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "react-scroll-to-top": "^3.0.0"
   }
 }

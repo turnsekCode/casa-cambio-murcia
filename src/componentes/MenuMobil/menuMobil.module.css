@@ -1,37 +1,20 @@
-.contenedorMenuMobil{
+.contenedorMenuMobil {
     display: flex;
     background: transparent;
-    position: fixed;
-    top: 0;
-    right: -2200px;
     width: 100%;
     overflow: scroll;
-    background: rgba(0, 0, 0, 0.3);
     transition: 0.3s ease-in-out;
+    height: 100vh;
 }
-.closeBoton{
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    position: fixed;
-    background: #036F9A;
-    z-index: 20;
-    width: 80%;
-    padding: 30px 20px;
-}
-.closeBoton svg{
-    font-size: 43px;
-    color: #FFFFFF;
-}
-.menuMobil{
-    width: 80%;
-    height: 103vh;
+
+.menuMobil {
+    width: 100%;
     background: #036F9A;
     transition: 0.4s;
     text-transform: uppercase;
-    margin-right: -330px;
 }
-.listasMenu a{
+
+.listasMenu a {
     font-weight: 600;
     font-size: 18px;
     line-height: 36px;
@@ -40,8 +23,20 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 15px;
+    font-family: 'Gotham Bold';
 }
-.servicios{
+.contacto{
+    font-weight: 600;
+        font-size: 18px;
+        line-height: 36px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 15px;
+        background: #036F9A;
+}
+.servicios {
     font-weight: 600;
     font-size: 18px;
     line-height: 36px;
@@ -52,8 +47,11 @@
     cursor: pointer;
     text-transform: uppercase;
     padding-right: 15px;
+    background: #036F9A;
+    font-family: 'Gotham Bold';
 }
-.servicios a{
+
+.servicios a {
     font-weight: 600;
     font-size: 18px;
     line-height: 36px;
@@ -63,13 +61,16 @@
     justify-content: flex-end;
     cursor: pointer;
     text-transform: uppercase;
+    font-family: 'Gotham Bold';
 
 }
-.servicios svg{
+
+.servicios svg {
     font-size: 36px;
-    margin: 0 -10px 0 6px;
+    margin: 0 -10px 0 0;
 }
-.subServicios{
+
+.subServicios {
     background: #0F2D45;
     width: 100%;
     height: auto;
@@ -78,36 +79,47 @@
     height: 0px;
     transition: height .3s ease;
     overflow-x: scroll;
+    
 }
-.subServicios a{
-    padding-right: 30px;
+
+.subServicios a {
+    padding: 0px 40px;
     font-weight: 700;
     font-size: 14px;
     line-height: 36px;
     text-align: right;
     text-transform: uppercase;
+    font-family: 'Gotham Bold';
 }
+
 .subMenuActivoServicios {
-    height: 150px;
+    height: 280px;
+    padding: 15px 0;
 }
-.subMenuActivo{
+
+.subMenuActivo {
     height: 800px;
     overflow-x: hidden;
+    padding: 15px 0;
 }
-.menuActive{
+
+.menuActive {
     margin-left: 0;
 }
+
 .menuActive1 {
     right: 0;
 }
-.contenedorListasMenu{
+
+.contenedorListasMenu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70vh;
-    margin-top: 110px;
+    height: 45vh;
+    margin-top: 20px;
 }
-.menuInferiorMobil{
+
+.menuInferiorMobil {
     background: #036F9A;
     border-top: 3px solid #fff;
     padding: 10px 15px 30px 0;
@@ -115,13 +127,19 @@
     justify-content: flex-end;
     padding-right: 15px;
 }
-.menuInferiorMobil ul li{
+
+.menuInferiorMobil ul li {
     font-weight: 700;
     font-size: 14px;
     line-height: 36px;
     text-align: right;
     color: #FFFFFF;
+    font-family: 'Gotham Bold';
 }
-.background{
+
+.background {
     width: 20%;
+}
+.serviciosTiendas{
+    padding-right: 0!important;
 }
