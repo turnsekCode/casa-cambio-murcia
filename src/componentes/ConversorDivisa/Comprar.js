@@ -384,8 +384,8 @@ const Comprar = () => {
           )}
         </div>
       </div>
-      <a className={styles.botonLlamarTienda} href="tel:900 373 629">
-        LLAMAR A TIENDA
+      <a className={styles.botonLlamarTienda} href="tel:900373629">
+        LLAMA GRATIS
       </a>
     </div>
   );
